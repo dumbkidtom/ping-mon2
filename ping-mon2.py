@@ -109,7 +109,7 @@ def main():
 
     # read config
     config = configparser.ConfigParser()
-    config.read('/home/dumbkid/projects/myping/ping-mon2.conf')
+    config.read('/home/dumbkid/projects/ping-mon2/ping-mon2.conf')
     db_host = config['DEFAULT']['influxdb_host']
     db_name = config['DEFAULT']['influxdb_database']
     db_port = config['DEFAULT']['influxdb_port']
