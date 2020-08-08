@@ -122,7 +122,7 @@ def main():
 
     threads = []
 
-    # start thread for each target
+    # create thread for each target
     for target in config.sections():
         try:
             log.info("Create thread: %s",target)
@@ -141,7 +141,7 @@ def main():
             log.error("Error: start thread failed for %s (%s)",target,sys.exc_info())
             sys.exit()
 
-    # start thread for each target
+    # wait for each thread to exit
     for thread in threads:
         try:
             log.info(" Join thread: %s",thread)
