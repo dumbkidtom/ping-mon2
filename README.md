@@ -4,7 +4,7 @@ Mini monitoring script to save the monitoring statistics in Influxdb database an
 
 ## Requirement
 
-- InfluxDB
+- InfluxDB (or InfluxCloud)
 - Grafana
 - Python3
 
