@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# INPUT: single dns server IP
+# OUTPUT: the average of all test DNS queries in milliseconds
+
 DNSSERVER=$1
 
 R1=`dig +noall +stats @${DNSSERVER} google.com | awk '/Query time/ {print $4}'`
